@@ -28,25 +28,9 @@ const About = ({ timeline: timelineProp, aboutMe, imageUrl }: AboutProps) => {
           <div className="h-1 w-20 bg-gradient-to-r from-primary to-secondary rounded mx-auto"></div>
         </motion.div>
         
-        <div className="flex flex-col md:flex-row gap-12 items-center">
+        <div className="flex flex-col gap-12 items-center">
           <motion.div 
-            className="md:w-2/5 md:order-2"
-            initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-          >
-            <div className="glass-card rounded-2xl p-1 shadow-xl">
-              <img 
-                src={imageUrl || "/pranav/pranav-prof-pic.png"} 
-                alt="Pranav Maruti Patil" 
-                className="rounded-2xl w-full h-auto" 
-              />
-            </div>
-          </motion.div>
-          
-          <motion.div 
-            className="md:w-3/5 md:order-1"
+            className="w-full"
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
@@ -64,6 +48,23 @@ Apart from technical development, I actively participate in hackathons, technica
 
 My goal is to become a highly skilled Software Engineer capable of building impactful digital products, scalable applications, and intelligent AI-driven systems.`}
             </p>
+            
+            {/* Profile image placed just below About paragraph */}
+            <motion.div 
+              className="mb-6 max-w-xs mx-auto md:mx-0"
+              initial={{ opacity: 0, y: 10 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.1, duration: 0.6 }}
+            >
+              <div className="glass-card rounded-2xl p-1 shadow-xl">
+                <img 
+                  src={imageUrl || "/pranav/pranav-prof-pic.png"} 
+                  alt="Pranav Maruti Patil" 
+                  className="rounded-2xl w-full h-auto" 
+                />
+              </div>
+            </motion.div>
             
             <motion.div 
               className="glass rounded-xl p-6 mb-6"
