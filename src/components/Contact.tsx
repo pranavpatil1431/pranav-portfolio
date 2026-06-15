@@ -23,8 +23,8 @@ const Contact = () => {
     },
     {
       title: "Resume",
-      value: "pranav patil resume.pdf",
-      link: "/pranav/pranav%20patil%20resume.pdf",
+      value: "pranav-patil-resume.pdf",
+      link: "/pranav/pranav-patil-resume.pdf",
       icon: "fas fa-file-pdf"
     },
     { 

@@ -20,8 +20,8 @@ npm run build
 
 Resume and assets:
 
-- Resume: public/pranav/pranav patil resume.pdf
-- Profile photo: public/pranav/pranav prof pic.png
+- Resume: public/pranav/pranav-patil-resume.pdf
+- Profile photo: public/pranav/pranav-prof-pic.png
 
 Repository: https://github.com/pranavpatil1431/pranav-portfolio
 

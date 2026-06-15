@@ -79,8 +79,8 @@ const Hero = ({ name = "Pranav Maruti", surname = "Patil", roles = [
               transition={{ delay: 1.1, duration: 0.8 }}
             >
               <a
-                href="/pranav/pranav%20patil%20resume.pdf"
-                className="bg-gradient-to-r from-primary to-secondary text-white px-8 py-3 rounded-full hover:opacity-90 transition-all duration-300 shadow-lg transform hover:-translate-y-1"
+                href="/pranav/pranav-patil-resume.pdf"
+                className="neon-btn neon-outline text-white px-8 py-3 rounded-full hover:opacity-90 transition-all duration-300 shadow-lg transform hover:-translate-y-1"
                 download
                 aria-label="Download Resume"
               >
@@ -156,9 +156,9 @@ const Hero = ({ name = "Pranav Maruti", surname = "Patil", roles = [
               <div className="glass-card rounded-full w-full h-full flex items-center justify-center overflow-hidden relative">
                 <div className="absolute -inset-0.5 bg-gradient-to-r from-primary to-secondary rounded-full blur opacity-0"></div>
                 <img 
-                  src="/pranav/pranav%20prof%20pic.png" 
+                  src="/pranav/pranav-prof-pic.png" 
                   alt="Pranav Maruti Patil" 
-                  className="rounded-full w-full h-full object-cover"
+                  className="rounded-full w-full h-full object-cover neon"
                 />
               </div>
             </div>
