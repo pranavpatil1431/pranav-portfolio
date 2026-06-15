@@ -194,13 +194,15 @@ const Projects = ({ onProjectClick, projects: projectsProp }: ProjectsProps) => 
                   </div>
                   
                   <div className="mt-auto">
-                    <button 
-                      className="text-accent hover:text-white transition-colors duration-300 flex items-center"
+                    <Button
+                      variant="neon"
+                      size="sm"
+                      className="flex items-center gap-2"
                       onClick={() => onProjectClick(project.id)}
                     >
                       <span>View Details</span>
-                      <i className="fas fa-arrow-right ml-2"></i>
-                    </button>
+                      <i className="fas fa-arrow-right"></i>
+                    </Button>
                   </div>
                 </div>
               </motion.div>
