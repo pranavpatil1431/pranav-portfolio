@@ -20,7 +20,7 @@ const LoadingScreen = ({ onFinish }: { onFinish: () => void }) => {
       <motion.img
         src="/pranav/generated-icon.png"
         alt="Logo"
-        className="h-20 w-20"
+        className="h-40 w-40"
         initial={{ opacity: 0, scale: 0.5 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 1 }}
