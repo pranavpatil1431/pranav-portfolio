@@ -73,7 +73,7 @@ const Navbar = () => {
         <div className="flex justify-between items-center">
           <Link href="#home" className="text-xl font-bold text-white">
             <img 
-              src="/generated-icon.png" 
+              src="/pranav/generated-icon.png" 
               alt="Logo" 
               className="h-8 w-8 object-cover"
             />
