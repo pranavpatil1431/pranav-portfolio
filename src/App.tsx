@@ -13,6 +13,7 @@ import Footer from "./components/Footer";
 import BackToTop from "./components/BackToTop";
 import ProjectModal from "./components/ProjectModal";
 import Resume from "./pages/Resume";
+import Documents from "./pages/Documents";
 import Blog from "./pages/Blog";
 import BlogPost from "./pages/BlogPost";
 import AdminRoute from "./pages/AdminRoute";
@@ -117,6 +118,7 @@ function App() {
             </main>
           } />
           <Route path="/resume" element={<Resume />} />
+          <Route path="/documents" element={<Documents />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:slug" element={<BlogPost />} />
           <Route path="/admin" element={

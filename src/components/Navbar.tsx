@@ -35,6 +35,7 @@ const Navbar = () => {
     { name: "Skills", href: "#skills" },
     { name: "Certifications", href: "#certifications" },
     { name: "Achievements", href: "#achievements" },
+    { name: "Documents", href: "/documents", isRoute: true },
     { name: "Blog", href: "/blog", isRoute: true },
     { name: "Contact", href: "#contact" },
     { name: "Admin", href: isAdmin ? "/admin" : "/admin-login", isRoute: true }, // Admin dashboard link
