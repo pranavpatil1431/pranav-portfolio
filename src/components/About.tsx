@@ -30,7 +30,7 @@ const About = ({ timeline: timelineProp, aboutMe, imageUrl }: AboutProps) => {
         
         <div className="flex flex-col md:flex-row gap-12 items-center">
           <motion.div 
-            className="md:w-2/5"
+            className="md:w-2/5 md:order-2"
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
@@ -38,7 +38,7 @@ const About = ({ timeline: timelineProp, aboutMe, imageUrl }: AboutProps) => {
           >
             <div className="glass-card rounded-2xl p-1 shadow-xl">
               <img 
-                src={imageUrl || "/pranav/pranav%20prof%20pic.png"} 
+                src={imageUrl || "/pranav/pranav-prof-pic.png"} 
                 alt="Pranav Maruti Patil" 
                 className="rounded-2xl w-full h-auto" 
               />
@@ -46,7 +46,7 @@ const About = ({ timeline: timelineProp, aboutMe, imageUrl }: AboutProps) => {
           </motion.div>
           
           <motion.div 
-            className="md:w-3/5"
+            className="md:w-3/5 md:order-1"
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
