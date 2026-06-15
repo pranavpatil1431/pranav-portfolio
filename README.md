@@ -5,7 +5,7 @@ This repository contains Pranav Patil's personal portfolio website built with Re
 Local development:
 
 ```bash
-cd Yashraj_Portfolio-main
+cd Pranav_Portfolio-main
 npm install
 npm run dev
 # open http://localhost:5173
@@ -14,7 +14,7 @@ npm run dev
 Build for production:
 
 ```bash
-cd Yashraj_Portfolio-main
+cd Pranav_Portfolio-main
 npm run build
 ```
 
