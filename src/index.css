@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Gaming font */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
 :root {
   --background: 0 0% 100%;
   --foreground: 20 14.3% 4.1%;
@@ -45,6 +48,42 @@
   --border: 240 3.7% 15.9%;
   --input: 240 3.7% 15.9%;
   --ring: 261 64% 58%;
+}
+
+/* Gaming / Neon theme */
+.gaming {
+  --background: 240 3% 6%; /* very dark */
+  --foreground: 210 100% 95%;
+  --card: 240 3% 8%;
+  --card-foreground: 210 100% 95%;
+  --popover: 240 3% 8%;
+  --popover-foreground: 210 100% 95%;
+  --primary: 190 100% 45%; /* neon cyan */
+  --primary-foreground: 210 40% 98%;
+  --secondary: 290 90% 60%; /* neon magenta */
+  --secondary-foreground: 210 40% 98%;
+  --accent: 25 100% 55%; /* neon yellow */
+  --accent-foreground: 210 40% 98%;
+  --muted: 240 3.7% 12%;
+  --muted-foreground: 240 5% 64.9%;
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 210 40% 98%;
+  --border: 210 100% 10%;
+  --input: 240 3.7% 12%;
+  --ring: 190 100% 45%;
+  --sidebar-background: 240 3% 6%;
+  --sidebar-foreground: 210 100% 95%;
+  --radius: 0.5rem;
+  font-family: 'Orbitron', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+}
+
+/* Neon glow helpers */
+.neon {
+  text-shadow: 0 0 8px rgba(124,58,237,0.6), 0 0 16px rgba(59,130,246,0.4);
+}
+
+.neon-outline {
+  box-shadow: 0 0 12px rgba(34,211,238,0.35), inset 0 0 8px rgba(124,58,237,0.12);
 }
 
 @layer base {

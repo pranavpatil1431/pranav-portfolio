@@ -1,6 +1,6 @@
 import { createContext, useContext, useEffect, useState } from "react";
 
-type Theme = "dark" | "light";
+type Theme = "dark" | "light" | "gaming";
 
 type ThemeProviderProps = {
   children: React.ReactNode;
@@ -32,13 +32,13 @@ export function ThemeProvider({
 
   useEffect(() => {
     const root = window.document.documentElement;
-    
-    // Remove the old theme class
-    root.classList.remove("light", "dark");
-    
+
+    // Remove any known theme classes
+    root.classList.remove("light", "dark", "gaming");
+
     // Add the new theme class
     root.classList.add(theme);
-    
+
     // Save the theme preference to localStorage
     localStorage.setItem(storageKey, theme);
   }, [theme, storageKey]);
@@ -67,14 +67,23 @@ export const useTheme = () => {
 export function ThemeToggle() {
   const { theme, setTheme } = useTheme();
 
+  const nextTheme = () => {
+    if (theme === "light") return "dark";
+    if (theme === "dark") return "gaming";
+    return "light";
+  };
+
   return (
     <button
-      onClick={() => setTheme(theme === "light" ? "dark" : "light")}
+      onClick={() => setTheme(nextTheme())}
       className="fixed bottom-24 right-6 z-50 bg-gradient-to-r from-primary to-secondary text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg hover:opacity-90 transition-all duration-300"
-      aria-label={`Switch to ${theme === "light" ? "dark" : "light"} mode`}
+      aria-label={`Switch theme (current: ${theme})`}
+      title={`Switch theme (current: ${theme})`}
     >
       {theme === "light" ? (
         <i className="fas fa-moon"></i>
+      ) : theme === "dark" ? (
+        <i className="fas fa-gamepad"></i>
       ) : (
         <i className="fas fa-sun"></i>
       )}
