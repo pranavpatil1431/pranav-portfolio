@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { timeline as staticTimeline, TimelineItem } from "../data/timeline";
 import GithubCalendar from "./GithubCalendar";
 import LeetcodeCalendar from "./LeetcodeCalendar";
+import { learningGoals } from "../data/goals";
 
 interface AboutProps {
   timeline?: TimelineItem[];
@@ -37,8 +38,8 @@ const About = ({ timeline: timelineProp, aboutMe, imageUrl }: AboutProps) => {
           >
             <div className="glass-card rounded-2xl p-1 shadow-xl">
               <img 
-                src={imageUrl || "https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=1000"} 
-                alt="Tech workspace with computers and AI visualizations" 
+                src={imageUrl || "/pranav/pranav%20prof%20pic.png"} 
+                alt="Pranav Maruti Patil" 
                 className="rounded-2xl w-full h-auto" 
               />
             </div>
@@ -53,13 +54,15 @@ const About = ({ timeline: timelineProp, aboutMe, imageUrl }: AboutProps) => {
           >
             <h3 className="text-2xl font-bold mb-4 text-accent">Full-Stack Developer & AI Engineer</h3>
             <p className="text-gray-300 mb-6 leading-relaxed">
-              {aboutMe || `I am Pranav Maruti Patil, a passionate AI & Data Science engineering student with strong interests in Full-Stack Development, Artificial Intelligence, IoT, and modern web technologies.
+              {aboutMe || `I am Pranav Maruti Patil, a passionate Artificial Intelligence & Data Science engineering student with strong interests in Full-Stack Development, Artificial Intelligence, IoT systems, and scalable software solutions.
 
-I enjoy building real-world solutions that combine software, hardware, and intelligent systems. My focus is on creating impactful and user-friendly applications that solve practical problems.
+I enjoy building practical, innovative, and user-focused applications that solve real-world problems using modern technologies. I continuously improve my skills through hands-on projects, hackathons, technical leadership, internships, and collaborative development experiences.
 
-I have worked on multiple projects including AI-powered systems, smart IoT applications, portfolio platforms, and database-driven web applications. I continuously explore new technologies and improve my development skills by building hands-on projects.
+I have experience developing AI-powered systems, IoT applications, and full-stack web platforms using technologies such as React.js, Node.js, JavaScript, MySQL, MongoDB, Python, and Raspberry Pi.
 
-Currently, I am focused on becoming a skilled Software Engineer and Full-Stack Developer while expanding my expertise in AI, backend systems, and scalable application development.`}
+Apart from technical development, I actively participate in hackathons, technical events, and team coordination activities that improve my leadership, communication, teamwork, and problem-solving abilities.
+
+My goal is to become a highly skilled Software Engineer capable of building impactful digital products, scalable applications, and intelligent AI-driven systems.`}
             </p>
             
             <motion.div 
@@ -73,21 +76,40 @@ Currently, I am focused on becoming a skilled Software Engineer and Full-Stack D
               <ul className="space-y-3 text-gray-300">
                 <li className="flex items-start">
                   <i className="fas fa-check-circle text-accent mt-1 mr-3"></i>
-                  <span>Design and develop smart systems like facial recognition doorbells and gesture automation</span>
+                  <span>Design and develop AI-based smart systems and automation solutions</span>
                 </li>
                 <li className="flex items-start">
                   <i className="fas fa-check-circle text-accent mt-1 mr-3"></i>
-                  <span>Build full-stack web applications with modern frameworks and responsive design</span>
+                  <span>Build scalable full-stack web applications with modern UI/UX</span>
                 </li>
                 <li className="flex items-start">
                   <i className="fas fa-check-circle text-accent mt-1 mr-3"></i>
-                  <span>Integrate AI models and algorithms into practical, user-friendly interfaces</span>
+                  <span>Integrate AI models and intelligent features into practical applications</span>
                 </li>
                 <li className="flex items-start">
                   <i className="fas fa-check-circle text-accent mt-1 mr-3"></i>
-                  <span>Develop IoT solutions and real-time systems for smart automation</span>
+                  <span>Develop IoT systems and real-time automation platforms</span>
+                </li>
+                <li className="flex items-start">
+                  <i className="fas fa-check-circle text-accent mt-1 mr-3"></i>
+                  <span>Create interactive chatbot systems and AI assistants</span>
+                </li>
+                <li className="flex items-start">
+                  <i className="fas fa-check-circle text-accent mt-1 mr-3"></i>
+                  <span>Build responsive and modern digital experiences</span>
                 </li>
               </ul>
+
+              <div className="mt-4">
+                <h5 className="text-lg font-semibold text-white mb-2">Core Domains</h5>
+                <div className="flex flex-wrap gap-2">
+                  <span className="bg-dark-lighter rounded-full px-3 py-1 text-sm">Full-Stack Development</span>
+                  <span className="bg-dark-lighter rounded-full px-3 py-1 text-sm">Artificial Intelligence</span>
+                  <span className="bg-dark-lighter rounded-full px-3 py-1 text-sm">Machine Learning</span>
+                  <span className="bg-dark-lighter rounded-full px-3 py-1 text-sm">IoT Systems</span>
+                  <span className="bg-dark-lighter rounded-full px-3 py-1 text-sm">Data Science</span>
+                </div>
+              </div>
             </motion.div>
             
             <div className="flex flex-wrap gap-4">
@@ -123,6 +145,22 @@ Currently, I am focused on becoming a skilled Software Engineer and Full-Stack D
                 <li>Passionate about AI and modern technologies</li>
                 <li>Quick learner and adaptable developer</li>
                 <li>Focused on building practical and scalable solutions</li>
+              </ul>
+            </motion.div>
+
+            <motion.div
+              className="glass rounded-xl p-6 mt-6"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.25, duration: 0.8 }}
+            >
+              <h4 className="text-xl font-semibold mb-3 text-white">Learning Goals</h4>
+              <p className="text-gray-400 mb-3">Current areas I'm focusing on improving. I'll update these as I progress.</p>
+              <ul className="space-y-2 text-gray-300 list-disc list-inside">
+                {learningGoals.map((g, i) => (
+                  <li key={i}>{g}</li>
+                ))}
               </ul>
             </motion.div>
           </motion.div>

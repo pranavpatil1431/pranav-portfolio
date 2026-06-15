@@ -104,6 +104,16 @@ const Certifications = ({ certificates }: CertificationsProps) => {
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-4">My <span className="text-gradient">Certifications</span></h2>
           <p className="text-gray-300 max-w-2xl mx-auto">Continuous learning and skill development are core to my professional growth.</p>
+          <div className="mt-4">
+            <a
+              href="https://drive.google.com/drive/folders/1JncQlYGPhmuqD5Afi5wq12eh3wY4fxCT?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block bg-gradient-to-r from-primary to-secondary text-white px-5 py-2 rounded-full shadow-md hover:opacity-90 transition-all duration-200"
+            >
+              View All Certificates
+            </a>
+          </div>
           <div className="h-1 w-20 bg-gradient-to-r from-primary to-secondary rounded mx-auto mt-4"></div>
         </motion.div>
         

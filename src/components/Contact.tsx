@@ -21,6 +21,12 @@ const Contact = () => {
       link: "mailto:mrpranavpatil11@gmail.com", 
       icon: "fas fa-envelope" 
     },
+    {
+      title: "Resume",
+      value: "pranav patil resume.pdf",
+      link: "/pranav/pranav%20patil%20resume.pdf",
+      icon: "fas fa-file-pdf"
+    },
     { 
       title: "Phone", 
       value: "+91 91308 67073", 
@@ -38,6 +44,12 @@ const Contact = () => {
       value: "github.com/pranavpatil1431", 
       link: "https://github.com/pranavpatil1431", 
       icon: "fab fa-github" 
+    }
+    ,{ 
+      title: "Location",
+      value: "Islampur, Sangli, Maharashtra",
+      link: "https://www.google.com/maps/search/Islampur%2C+Sangli%2C+Maharashtra",
+      icon: "fas fa-map-marker-alt"
     }
   ];
 

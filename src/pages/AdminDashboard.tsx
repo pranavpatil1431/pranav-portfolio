@@ -67,7 +67,7 @@ const AdminDashboard: React.FC = () => {
         subtitle: item.subtitle || '',
         description: item.description || ''
       })),
-      aboutMe: `I'm a passionate full-stack developer with strong problem-solving skills, currently pursuing a degree in Artificial Intelligence and Data Science at ADCET with a CGPA of 8.45. My journey in tech is driven by a desire to create innovative solutions that merge cutting-edge technologies with practical applications.`,
+      aboutMe: `I'm a passionate full-stack developer with strong problem-solving skills, currently pursuing a degree in Artificial Intelligence and Data Science at ADCET with a CGPA of 7.85. Internship: Web Development Intern at Cognifyze Technology, Nagpur. My journey in tech is driven by a desire to create innovative solutions that merge cutting-edge technologies with practical applications.`,
       imageUrl: ''
     };
     try {
@@ -91,7 +91,7 @@ const AdminDashboard: React.FC = () => {
       }
       // If aboutMe is missing or empty, set the default
       if (!parsed.aboutMe || parsed.aboutMe.trim() === "") {
-        parsed.aboutMe = `I'm a passionate full-stack developer with strong problem-solving skills, currently pursuing a degree in Artificial Intelligence and Data Science at ADCET with a CGPA of 8.45. My journey in tech is driven by a desire to create innovative solutions that merge cutting-edge technologies with practical applications.`;
+        parsed.aboutMe = `I'm a passionate full-stack developer with strong problem-solving skills, currently pursuing a degree in Artificial Intelligence and Data Science at ADCET with a CGPA of 7.85. Internship: Web Development Intern at Cognifyze Technology, Nagpur. My journey in tech is driven by a desire to create innovative solutions that merge cutting-edge technologies with practical applications.`;
       }
       return parsed;
     } catch {
@@ -102,7 +102,7 @@ const AdminDashboard: React.FC = () => {
           subtitle: item.subtitle || '',
           description: item.description || ''
         })),
-        aboutMe: `I'm a passionate full-stack developer with strong problem-solving skills, currently pursuing a degree in Artificial Intelligence and Data Science at ADCET with a CGPA of 8.45. My journey in tech is driven by a desire to create innovative solutions that merge cutting-edge technologies with practical applications.`,
+        aboutMe: `I'm a passionate full-stack developer with strong problem-solving skills, currently pursuing a degree in Artificial Intelligence and Data Science at ADCET with a CGPA of 7.85. Internship: Web Development Intern at Cognifyze Technology, Nagpur. My journey in tech is driven by a desire to create innovative solutions that merge cutting-edge technologies with practical applications.`,
         imageUrl: ''
       };
     }

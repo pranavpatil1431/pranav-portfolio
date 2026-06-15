@@ -8,10 +8,8 @@ interface HeroProps {
   roles?: string[];
 }
 
-const Hero = ({ name = "Pranav", surname = "Patil", roles = [
-  "AI & Data Science Student",
-  "Full-Stack Web Developer",
-  "AI Enthusiast",
+const Hero = ({ name = "Pranav Maruti", surname = "Patil", roles = [
+  "AI & Data Science Engineer | Full-Stack Developer | AI Enthusiast",
 ] }: HeroProps) => {
   return (
     <section id="home" className="min-h-screen flex items-center justify-center pt-20 bg-pattern relative overflow-hidden">
@@ -69,11 +67,9 @@ const Hero = ({ name = "Pranav", surname = "Patil", roles = [
               animate={{ opacity: 1 }}
               transition={{ delay: 0.9, duration: 0.8 }}
             >
-              Hi, I'm Pranav Patil 🚀
+              I am Pranav Maruti Patil — an AI & Data Science Engineering student and Full-Stack Developer.
 
-              AI & Data Science Student | Full-Stack Web Developer | AI Enthusiast
-
-              I build intelligent, scalable, and interactive digital experiences using modern web technologies, artificial intelligence, and IoT systems.
+              Building intelligent digital experiences using AI, Full-Stack Development, IoT, and modern technologies.
             </motion.p>
 
             <motion.div 
@@ -82,17 +78,13 @@ const Hero = ({ name = "Pranav", surname = "Patil", roles = [
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 1.1, duration: 0.8 }}
             >
-              <a 
-                href="/resume" 
+              <a
+                href="/pranav/pranav%20patil%20resume.pdf"
                 className="bg-gradient-to-r from-primary to-secondary text-white px-8 py-3 rounded-full hover:opacity-90 transition-all duration-300 shadow-lg transform hover:-translate-y-1"
-                target="_blank"
-                rel="noopener noreferrer"
-                onClick={(e) => {
-                  e.preventDefault();
-                  window.location.href = "/resume";
-                }}
+                download
+                aria-label="Download Resume"
               >
-                View Resume
+                Download Resume
               </a>
               <a 
                 href="#projects" 
@@ -164,8 +156,8 @@ const Hero = ({ name = "Pranav", surname = "Patil", roles = [
               <div className="glass-card rounded-full w-full h-full flex items-center justify-center overflow-hidden relative">
                 <div className="absolute -inset-0.5 bg-gradient-to-r from-primary to-secondary rounded-full blur opacity-0"></div>
                 <img 
-                  src="/pranav.jpeg" 
-                  alt="Pranav" 
+                  src="/pranav/pranav%20prof%20pic.png" 
+                  alt="Pranav Maruti Patil" 
                   className="rounded-full w-full h-full object-cover"
                 />
               </div>

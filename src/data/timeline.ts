@@ -9,19 +9,19 @@ export const timeline: TimelineItem[] = [
   {
     period: "2011 - 2021",
     title: "SSC Completed",
-    subtitle: "Global English Medium School, Umbraj",
-    description: "Secured 81.20% in SSC Board Examination."
+    subtitle: "Maharaja Sayajirao Vidyalaya, Satara",
+    description: "Secured 92% in SSC Board Examination. Developed strong academic and analytical foundations."
   },
   {
     period: "2021 - 2023",
     title: "HSC Completed",
-    subtitle: "SGM College, Karad",
-    description: "Secured 60.2% in HSC Board Examination."
+    subtitle: "Y.C. College, Islampur",
+    description: "Secured 60.33% in HSC Board Examination. Developed interest in computer science and software technologies."
   },
   {
     period: "2023 - Present",
-    title: "B.Tech in AI & Data Science",
-    subtitle: "ADCET, Ashta",
-    description: "Pursuing AI and Data Science with a CGPA of 8.45 in Second Year"
+    title: "Bachelor of Technology (B.Tech)",
+    subtitle: "Artificial Intelligence & Data Science — ADCET, Ashta",
+    description: "Current CGPA: 7.85. Actively building AI, Full-Stack, and IoT projects; participating in hackathons and technical events."
   }
 ];
